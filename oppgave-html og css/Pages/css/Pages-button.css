@@ -1,0 +1,44 @@
+.dropDown {
+  position: relative;
+  display: inline-block;
+  position: sticky;
+  margin: 10px;
+  right: 2000px;
+  
+}
+
+.dropDown button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+.dropDown .content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropDown .content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropDown:hover .content {
+  display: block; 
+}
+
+.dropDown .content a:hover {
+  background-color: gray;
+}

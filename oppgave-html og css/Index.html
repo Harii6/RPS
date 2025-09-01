@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji Rock Paper Scissors</title>
+  <link rel="stylesheet" href="Pages/css/Home-page.css" />
+  <link rel="stylesheet" href="Pages/css/Pages-button.css">
+</head>
+<body>
+    <h1 class="homepage-title">Rock, Paper & Scissors</h1>
+
+
+    <div class="dropDown">
+        <button>
+            Pages
+        </button>
+        <div class="content">
+            <a href="Index.html">Homepage</a>
+            <a href="Pages/About.html">About</a>
+            <a href="Pages/Rules.html">Rules</a>
+    </div>
+</div>
+  <button class="emoji-button" aria-label="Rock" onclick="game('✊')">✊</button>
+  <button class="emoji-button" aria-label="Paper" onclick="game('✋')">✋</button>
+  <button class="emoji-button" aria-label="Scissors" onclick="game('✌️')">✌️</button>
+
+  <br />
+  <button class="reset-button" onclick="resetScore()">Reset Score</button>
+
+  <p class="result-message"></p>
+  <p class="match-details"></p>
+  <p class="score-board"></p>
+
+  <script src="Javascript/Gamelogic.js"></script>
+</body>
+</html>
