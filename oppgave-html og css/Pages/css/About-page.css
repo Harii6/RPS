@@ -11,72 +11,87 @@ body {
  margin-top: 20px;
  color: aliceblue;
  z-index: 2;
-}
-
-.container{
-    align-items: center;
-    position: relative;
-    left: 120px;
-    display: inline block;
-    
+ align-items: end;
+ justify-content: center;
 }
 
 
 
-.emoji{
+
+
+.emoji {
+  
   background-color: black;
-  border: 2px solid white;
   width: 80px;
   height: 80px;
-  font-size: 2rem;
+  border: none;
   margin: 10px;
-  position: relative;
-  right: 60px;
-  border-radius: 100%;
-  display: inline block;
-}
-
-.dropDown {
-  position: relative;
-  display: inline-block;
-  position: sticky;
-  margin: 10px;
-  right: 2000px;
+  
   
 }
 
-.dropDown button {
-  padding: 10px 20px;
-  border: 2px solid white;
-  border-radius: 8px;
-  background-color: black;
-  color: white;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  gap: 5px; 
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.emoji-knapp{
+  position: relative;
+  right: 50px;
+}
+
+
+.pill-section {
+   max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #000; 
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.pill-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pill-text {
   font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
-.dropDown .content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
-  z-index: 1;
-  border-radius: 4px;
+.pill-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-.dropDown .content a {
-  color: white;
-  padding: 12px 16px;
-  display: block;
-  text-decoration: none;
+.pill {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 25px;
 }
 
-.dropDown:hover .content {
-  display: block; 
+.pill-red:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
 }
 
-.dropDown .content a:hover {
-  background-color: gray;
+.pill-blue:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 128, 255, 0.8);
 }
+
