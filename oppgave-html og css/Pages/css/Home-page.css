@@ -18,6 +18,8 @@ button {
   height: 80px;
   font-size: 2rem;
   margin: 10px;
+  position: relative;
+  right: 60px;
   border-radius: 100%;
 }
 
@@ -34,8 +36,6 @@ button {
 
 .homepage-title{
   z-index: 2;
-  justify-content: center;
-  align-items: center;
 }
 
 .result-message,
@@ -49,9 +49,11 @@ button {
 
 .dropDown {
   position: relative;
-  align-self: center;
+  display: inline-block;
   position: sticky;
   margin: 10px;
+  right: 2000px;
+  
 }
 
 .dropDown button {
@@ -90,16 +92,3 @@ button {
   background-color: gray;
 }
 
-.flexKnapper{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.rpsKnapper{
-  position: relative;
-  right: 50px;
-}
